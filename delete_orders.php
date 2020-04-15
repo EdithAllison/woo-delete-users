@@ -44,7 +44,7 @@ class WC_Tools_Delete_Orders_Button {
 		$new = array(
 			'delete_all_orders' => array(
 				'name'		=> __( 'Delete Orders', '' ),
-				'button'	=> __( 'DELETE', '' ),
+				'button'	=> __( 'DELETE ORDERS', '' ),
 				'desc'		=> __( 'Delete up to 500 orders. Run multiple times to delete all. On multisites, deletes orders for current blog, not network. ', '' ),
 				'callback'	=> array( $this, 'delete_all_orders' ),
 			),
