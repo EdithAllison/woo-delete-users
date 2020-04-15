@@ -1,4 +1,4 @@
-# woo-delete-users-orders
+# woo-delete-users
 
 MU Plugin for WooCommerce. Delete Users. Delete Orders. 
 
