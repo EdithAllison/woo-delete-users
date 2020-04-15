@@ -44,19 +44,19 @@ class WC_Tools_Custom_Button {
 		$new = array(
 			'delete_all_users_except_admins' => array(
 				'name'		=> __( 'Delete Users', '' ),
-				'button'	=> __( 'DELETE', '' ),
+				'button'	=> __( 'DELETE 500 USERS', '' ),
 				'desc'		=> __( 'Delete up to 500 users except admins. Run multiple times to delete all. On multisites, deletes users for current blog, not network. ', '' ),
 				'callback'	=> array( $this, 'delete_all_users_except_admins' ),
 			),
 			'delete_all_customers_without_orders' => array(
 				'name'		=> __( 'Delete Customers Without Orders', '' ),
-				'button'	=> __( 'DELETE', '' ),
+				'button'	=> __( 'DELETE USERS WITHOUT ORDERS', '' ),
 				'desc'		=> __( 'Delete all customers without orders. If script times out, run again. On Multisites, deletes customers for current blog not for network.   ', '' ),
 				'callback'	=> array( $this, 'delete_all_customers_without_orders' ),
 			),			
 			'delete_network_users_without_blog' => array(
 				'name'		=> __( 'Multisite: Delete Users Without Blog', '' ),
-				'button'	=> __( 'DELETE', '' ),
+				'button'	=> __( 'DELETE USERS WITHOUT BLOG', '' ),
 				'desc'		=> __( 'Delete all users not assigned to a blog. If script times out, run again.', '' ),
 				'callback'	=> array( $this, 'delete_network_users_without_blog' ),
 			),				
