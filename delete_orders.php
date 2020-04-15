@@ -63,6 +63,7 @@ class WC_Tools_Delete_Orders_Button {
 	public function delete_all_orders() {
 
 		$args = array(
+			'limit' => 500, 
 		    'orderby' => 'date',
 		    'order' => 'ASC',			
 		    'return' => 'ids',
@@ -74,13 +75,9 @@ class WC_Tools_Delete_Orders_Button {
         $i = 0; 
 
         foreach( $orders as $order_id ) {
-	        
-	        if ($i < 500 ) {
 		        
-		        wp_delete_post($order_id,true);
-	            $i++; 
-            
-            }
+	        wp_delete_post($order_id,true);
+            $i++; 
 
         }	
 
