@@ -143,7 +143,6 @@ class WC_Tools_Custom_Button {
 		if (is_multisite() ) {
 					
 	        $user_ids = $wpdb->get_col( 'SELECT ID FROM ' . $wpdb->prefix . 'users ORDER BY ID ASC'  );
-	        error_log( print_r($user_ids, true) );
 	        $i = 0; 
 	        
 	        foreach ($user_ids as $id ) {
