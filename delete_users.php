@@ -148,7 +148,6 @@ class WC_Tools_Custom_Button {
 	        foreach ($user_ids as $id ) {
 		        
 		 		$blogs = get_blogs_of_user( $id, true );
-		 		error_log( print_r($blogs, true) );
 		 		
 				if ( (empty( $blogs )) && (!is_super_admin($id))  ) {
 		       
